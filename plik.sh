@@ -42,20 +42,20 @@ git revert pushed
 git cherry-pick C3 C4 C7
 
 #10.
-git rebase -i master~4 --aboveAll
+git rebase -i main~4 --aboveAll
 
 #11.
-git checkout master
+git checkout main
 git cherry-pick C4
 
 #12.
 git rebase -i caption~2 --aboveAll
 git commit --amend
 git rebase -i caption~2 --aboveAll
-git branch -f master caption
+git branch -f main caption
 
 #13.
-git checkout master;
+git checkout main;
 git cherry-pick C2;
 git commit --amend;
 git cherry-pick C3;
